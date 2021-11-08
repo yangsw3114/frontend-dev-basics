@@ -32,6 +32,35 @@ body					{ font-family: '맑은 고딕' 돋움; font-size:0.75em; color:#333 }
 // DOM Level 1 Event 처리: HTML element의 event 속성에 자바스크립트 코드를 사용하는 방법
 // 2) JavaScript Code(DOM API)로만 작성하기
 
+var onTabClicked = function(){
+	console.log("click" + this.innerText);
+	//unselect
+	var lisSelected = document.getElementsByClassName("selected");
+	
+	(lisSelected.length == 1) && (lisSelected[0].className = ''); // if문에서 이걸로 변형
+	//&& 앞의 내용이 true여야 뒤의 내용 실행
+
+	
+	//select
+	this.className = "selected";
+}
+
+window.onload = function(){  //window.onload 웹페이지 로드될때 실행됨
+	console.log("DOM load!");
+	var divTabBox = document.getElementsByClassName("tab-box")[0];
+	console.log(divTabBox.childNodes);
+	
+	var ul = divTabBox.childNodes[1];	
+	console.log(ul);
+	
+	var liTabs = ul.getElementsByTagName("li");
+	console.log(liTabs);
+	
+	for(var i = 0; i < liTabs.length; i++){
+		liTabs[i].onclick = onTabClicked; //함수는 상단에 정의
+	}
+}
+
 </script>
 </head>
 <body>
