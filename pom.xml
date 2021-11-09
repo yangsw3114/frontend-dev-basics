@@ -71,5 +71,6 @@
   	<module>chap03</module>
   	<module>chap04</module>
   	<module>ch05</module>
+  	<module>ch06</module>
   </modules>
 </project>
