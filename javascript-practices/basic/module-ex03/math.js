@@ -18,5 +18,5 @@ exports.min = function() {
         min = e < min ? e : min;
     });
 
-    return min
+    return min//
 };

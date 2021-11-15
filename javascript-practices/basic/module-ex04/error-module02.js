@@ -3,5 +3,5 @@ module.exports = function() {
 }
 
 exports.function02 = function() {
-    console.log('function02');
+    console.log('function02');//
 }

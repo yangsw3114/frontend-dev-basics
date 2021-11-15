@@ -14,6 +14,6 @@ module.exports = {
             min = e < min ? e : min;
         });
 
-        return min
+        return min//
     }
 }

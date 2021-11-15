@@ -2,6 +2,6 @@
 
 var App = require('./app');
 
-console.log(App());
+console.log(App()); //
 
 
