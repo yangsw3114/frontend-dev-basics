@@ -13,3 +13,5 @@ ex03("param-data");
 ex03("param-error");
 
 console.log('wait...');
+
+console.log();

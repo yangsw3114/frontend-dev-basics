@@ -38,3 +38,5 @@ if(require.main == module) {
 } else {
     module.exports = ex02;
 }
+
+console.log();

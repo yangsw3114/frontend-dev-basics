@@ -32,4 +32,4 @@ ex01('param-error', function(error, res){
 });
 
 console.log("wait.......");
-
+console.log();
